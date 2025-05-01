@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Category & Price Filter</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Filter Products</h1>
+
+<div class="filters">
+  <select id="category" onchange="applyFilters()">
+    <option value="all">All Categories</option>
+    <option value="electronics">Electronics</option>
+    <option value="fashion">Fashion</option>
+    <option value="books">Books</option>
+    <option value="groceries">Groceries</option>
+    <option value="sports">Sports</option>
+  </select>
+
+  <select id="price" onchange="applyFilters()">
+    <option value="all">All Prices</option>
+    <option value="low">0 - 499</option>
+    <option value="mid">500 - 999</option>
+    <option value="high">1000+</option>
+  </select>
+</div>
+
+<div class="products" id="productList">
+  <!-- Example Products -->
+  <div class="product electronics" data-price="1200">
+    <img src="https://via.placeholder.com/200x120?text=TV">
+    <h3>Smart TV</h3>
+    <p>$1200</p>
+    <button class="add-to-cart" data-price="1200">Add to Cart</button>
+  </div>
+
+  <div class="product electronics" data-price="850">
+    <img src="https://via.placeholder.com/200x120?text=Phone">
+    <h3>Smartphone</h3>
+    <p>$850</p>
+    <button class="add-to-cart" data-price="850">Add to Cart</button>
+  </div>
+
+  <div class="product fashion" data-price="350">
+    <img src="https://via.placeholder.com/200x120?text=Shirt">
+    <h3>Casual Shirt</h3>
+    <p>$350</p>
+    <button class="add-to-cart" data-price="350">Add to Cart</button>
+  </div>
+
+  <div class="product fashion" data-price="700">
+    <img src="https://via.placeholder.com/200x120?text=Shoes">
+    <h3>Running Shoes</h3>
+    <p>$700</p>
+    <button class="add-to-cart" data-price="700">Add to Cart</button>
+  </div>
+
+  <div class="product books" data-price="200">
+    <img src="https://via.placeholder.com/200x120?text=Book">
+    <h3>Science Book</h3>
+    <p>$200</p>
+    <button class="add-to-cart" data-price="200">Add to Cart</button>
+  </div>
+
+  <div class="product books" data-price="600">
+    <img src="https://via.placeholder.com/200x120?text=History">
+    <h3>History Book</h3>
+    <p>$600</p>
+    <button class="add-to-cart" data-price="600">Add to Cart</button>
+  </div>
+
+  <div class="product groceries" data-price="100">
+    <img src="https://via.placeholder.com/200x120?text=Milk">
+    <h3>Milk</h3>
+    <p>$100</p>
+    <button class="add-to-cart" data-price="100">Add to Cart</button>
+  </div>
+
+  <div class="product groceries" data-price="550">
+    <img src="https://via.placeholder.com/200x120?text=Snacks">
+    <h3>Snacks Pack</h3>
+    <p>$550</p>
+    <button class="add-to-cart" data-price="550">Add to Cart</button>
+  </div>
+
+  <div class="product sports" data-price="1400">
+    <img src="https://via.placeholder.com/200x120?text=Cycle">
+    <h3>Mountain Bicycle</h3>
+    <p>$1400</p>
+    <button class="add-to-cart" data-price="1400">Add to Cart</button>
+  </div>
+
+  <div class="product sports" data-price="480">
+    <img src="https://via.placeholder.com/200x120?text=Ball">
+    <h3>Football</h3>
+    <p>$480</p>
+    <button class="add-to-cart" data-price="480">Add to Cart</button>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
